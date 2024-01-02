@@ -11,7 +11,7 @@
 
 - 🌱 I’m currently learning **UI/UX , FULL STACK WEB DEVELOPMENT**
   
-- 🎴Commited  **Problem Solver**. 
+- 🎴 Commited  **Problem Solver**. 
 
 - 💬 Ask me about **Backend , React , APIs , HTTPS , Networking**
 
