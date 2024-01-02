@@ -1,7 +1,8 @@
 ![MasterHead](https://www.pramukhdigital.com/wp-content/uploads/2018/07/New-PNC-Animated-Banners.gif)
 
 <h1 align="center"> < HELLO WORLD>👋, I'm Shashant Thakur</h1>
-<h3 align="center">A passionate full stack developer , UI /UX learner from India .</h3>
+<h3 align="center">Computer Science and Engineering Student at NIT-Hamirpur</h3>
+<h3 align="center">A passionate full stack developer, problem solver , UI /UX learner from India .</h3>
 <img align="right" alt="Coding" width="400" src="https://cdn.dribbble.com/users/1162077/screenshots/3848914/programmer.gif">
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=thakurshashant&label=Profile%20views&color=0e75b6&style=flat" alt="thakurshashant" /> </p>
@@ -9,6 +10,8 @@
 <p align="left"> <a href="https://twitter.com/" target="blank"><img src="https://img.shields.io/twitter/follow/?logo=twitter&style=for-the-badge" alt="" /></a> </p>
 
 - 🌱 I’m currently learning **UI/UX , FULL STACK WEB DEVELOPMENT**
+  
+- 🎴Commited  **Problem Solver**. 
 
 - 💬 Ask me about **Backend , React , APIs , HTTPS , Networking**
 
