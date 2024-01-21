@@ -1,4 +1,4 @@
-![MasterHead](https://www.pramukhdigital.com/wp-content/uploads/2018/07/New-PNC-Animated-Banners.gif)
+![MasterHead]([https://www.pramukhdigital.com/wp-content/uploads/2018/07/New-PNC-Animated-Banners.gif](https://raw.githubusercontent.com/halfrost/halfrost/master/icons/header_.png))
 
 <h1 align="center"> < HELLO WORLD>👋, I'm Shashant Thakur</h1>
 <h3 align="center">Computer Science and Engineering Student at NIT-Hamirpur</h3>
