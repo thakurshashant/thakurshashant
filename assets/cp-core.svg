@@ -1,0 +1,72 @@
+<svg width="680" height="200" viewBox="0 0 680 200" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .title { font:700 20px 'Fira Code', monospace; fill:#ffffff }
+    .node { font:600 12px 'Fira Code', monospace; fill:#0d1117 }
+    .edge { stroke:#58e0ff; stroke-width:2; stroke-dasharray:4 6; animation: dash 6s linear infinite; }
+    @keyframes dash { to { stroke-dashoffset: -200; } }
+    .bubble { animation: pop 5.5s ease-in-out infinite; }
+    @keyframes pop { 0%,100% { transform: scale(1); } 50% { transform: scale(1.12); } }
+    .glow { filter: drop-shadow(0 0 6px #44ffaf); }
+  </style>
+  <rect width="680" height="200" rx="18" fill="#0d1117" stroke="#222" stroke-width="2"/>
+  <text x="50%" y="34" text-anchor="middle" class="title">COMPETITIVE PROGRAMMING CORE</text>
+
+  <!-- Edges -->
+  <line x1="340" y1="95" x2="180" y2="95" class="edge"/>
+  <line x1="340" y1="95" x2="500" y2="95" class="edge"/>
+  <line x1="340" y1="95" x2="260" y2="155" class="edge"/>
+  <line x1="340" y1="95" x2="420" y2="155" class="edge"/>
+
+  <!-- Central -->
+  <g class="bubble glow">
+    <circle cx="340" cy="95" r="40" fill="url(#g0)"/>
+    <text x="340" y="92" text-anchor="middle" font-size="14" fill="#fff" font-family="Fira Code">Logic</text>
+    <text x="340" y="110" text-anchor="middle" font-size="10" fill="#8bb9ff" font-family="Fira Code">Core</text>
+  </g>
+
+  <!-- Gradient defs -->
+  <defs>
+    <linearGradient id="g0" x1="0" x2="1">
+      <stop offset="0%" stop-color="#44FFAF"/>
+      <stop offset="100%" stop-color="#06B0FF"/>
+    </linearGradient>
+    <linearGradient id="g1" x1="0" x2="1">
+      <stop offset="0%" stop-color="#8E2DE2"/>
+      <stop offset="100%" stop-color="#4A00E0"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0" x2="1">
+      <stop offset="0%" stop-color="#FF512F"/>
+      <stop offset="100%" stop-color="#DD2476"/>
+    </linearGradient>
+    <linearGradient id="g3" x1="0" x2="1">
+      <stop offset="0%" stop-color="#F7971E"/>
+      <stop offset="100%" stop-color="#FFD200"/>
+    </linearGradient>
+    <linearGradient id="g4" x1="0" x2="1">
+      <stop offset="0%" stop-color="#1A2980"/>
+      <stop offset="100%" stop-color="#26D0CE"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Peripheral nodes -->
+  <g class="bubble" style="animation-delay:.4s">
+    <circle cx="180" cy="95" r="30" fill="url(#g1)"/>
+    <text x="180" y="92" text-anchor="middle" class="node">DS</text>
+    <text x="180" y="108" text-anchor="middle" font-size="9" fill="#fff">Structures</text>
+  </g>
+  <g class="bubble" style="animation-delay:.9s">
+    <circle cx="500" cy="95" r="30" fill="url(#g2)"/>
+    <text x="500" y="92" text-anchor="middle" class="node">Algo</text>
+    <text x="500" y="108" text-anchor="middle" font-size="9" fill="#fff">Patterns</text>
+  </g>
+  <g class="bubble" style="animation-delay:1.4s">
+    <circle cx="260" cy="155" r="30" fill="url(#g3)"/>
+    <text x="260" y="152" text-anchor="middle" class="node">Complex</text>
+    <text x="260" y="168" text-anchor="middle" font-size="9" fill="#fff">Analysis</text>
+  </g>
+  <g class="bubble" style="animation-delay:2s">
+    <circle cx="420" cy="155" r="30" fill="url(#g4)"/>
+    <text x="420" y="152" text-anchor="middle" class="node">Optimize</text>
+    <text x="420" y="168" text-anchor="middle" font-size="9" fill="#fff">Scaling</text>
+  </g>
+</svg>
