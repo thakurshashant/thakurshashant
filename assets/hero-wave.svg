@@ -1,0 +1,39 @@
+<svg width="1200" height="140" viewBox="0 0 1200 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" gradientTransform="rotate(25)">
+      <stop offset="0%" stop-color="#44FFAF"/>
+      <stop offset="50%" stop-color="#06B0FF"/>
+      <stop offset="100%" stop-color="#C154FF"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <path id="w1" d="M0 70 Q150 30 300 70 T600 70 T900 70 T1200 70 V140 H0 Z"/>
+    <path id="w2" d="M0 75 Q150 115 300 75 T600 75 T900 75 T1200 75 V140 H0 Z"/>
+  </defs>
+  <rect width="1200" height="140" fill="#0d1117"/>
+  <g>
+    <use href="#w1" fill="url(#grad)">
+      <animate attributeName="d" dur="12s" repeatCount="indefinite"
+        values="
+        M0 70 Q150 30 300 70 T600 70 T900 70 T1200 70 V140 H0 Z;
+        M0 65 Q150 50 300 65 T600 75 T900 60 T1200 70 V140 H0 Z;
+        M0 70 Q150 30 300 70 T600 70 T900 70 T1200 70 V140 H0 Z"/>
+    </use>
+    <use href="#w2" fill="rgba(255,255,255,0.07)">
+      <animate attributeName="d" dur="10s" repeatCount="indefinite"
+        values="
+        M0 75 Q150 115 300 75 T600 75 T900 75 T1200 75 V140 H0 Z;
+        M0 80 Q150 100 300 80 T600 90 T900 70 T1200 75 V140 H0 Z;
+        M0 75 Q150 115 300 75 T600 75 T900 75 T1200 75 V140 H0 Z"/>
+    </use>
+  </g>
+  <text x="50%" y="58%" text-anchor="middle" fill="#ffffff" font-size="34" font-family="Fira Code, monospace" filter="url(#glow)">
+    Crafting Efficient Intelligent Systems
+    <animate attributeName="opacity" values="0.85;1;0.85" dur="4s" repeatCount="indefinite"/>
+  </text>
+</svg>
