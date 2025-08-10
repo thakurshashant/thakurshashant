@@ -1,0 +1,148 @@
+<svg width="820" height="300" viewBox="0 0 820 300" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .label { font: 700 16px 'Fira Code', monospace; fill: #e6e6e6; letter-spacing: .5px }
+    .cat   { font: 600 13px 'Fira Code', monospace; fill: #8bb9ff }
+    .ring { transform-origin: center; animation: spin 18s linear infinite; opacity:.25 }
+    @keyframes spin { to { transform: rotate(360deg) } }
+    .icon-wrap { animation: float 6s ease-in-out infinite; }
+    @keyframes float {
+      0%,100% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+    }
+    .pulse { animation: pulse 3.4s ease-in-out infinite; }
+    @keyframes pulse {
+      0%,100% { filter: drop-shadow(0 0 0px #44FFAF); }
+      50% { filter: drop-shadow(0 0 7px #44FFAF); }
+    }
+  </style>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#141e30"/>
+      <stop offset="100%" stop-color="#243b55"/>
+    </linearGradient>
+    <linearGradient id="gl" x1="0" x2="1">
+      <stop offset="0%" stop-color="#44FFAF"/>
+      <stop offset="50%" stop-color="#06B0FF"/>
+      <stop offset="100%" stop-color="#C154FF"/>
+    </linearGradient>
+    <circle id="orbit" cx="410" cy="150" r="120" stroke="url(#gl)" stroke-width="2" fill="none" stroke-dasharray="6 10"/>
+  </defs>
+  <rect width="820" height="300" rx="18" fill="url(#bg)"/>
+  <use href="#orbit" class="ring"/>
+  <text x="50%" y="40" text-anchor="middle" class="label" fill="url(#gl)">TECH • STACK • CORE</text>
+
+  <!-- Row categories -->
+  <text x="50" y="80" class="cat">Core</text>
+  <text x="50" y="120" class="cat">Web</text>
+  <text x="50" y="160" class="cat">DevOps</text>
+  <text x="50" y="200" class="cat">AI / NLP</text>
+  <text x="50" y="240" class="cat">Tooling</text>
+
+  <!-- Icons (using simplified glyph placeholders) Replace with paths if desired -->
+  <!-- Core -->
+  <g class="icon-wrap pulse">
+    <circle cx="140" cy="75" r="18" fill="#00599C"/>
+    <text x="140" y="80" text-anchor="middle" font-size="12" fill="#fff">C++</text>
+  </g>
+  <g class="icon-wrap" style="animation-delay:0.6s">
+    <circle cx="190" cy="75" r="18" fill="#3776AB"/>
+    <text x="190" y="80" text-anchor="middle" font-size="11" fill="#fff">Py</text>
+  </g>
+  <g class="icon-wrap" style="animation-delay:1.2s">
+    <circle cx="240" cy="75" r="18" fill="#A8B9CC"/>
+    <text x="240" y="80" text-anchor="middle" font-size="11" fill="#0d1117">C</text>
+  </g>
+
+  <!-- Web -->
+  <g class="icon-wrap" style="animation-delay:.3s">
+    <circle cx="140" cy="115" r="18" fill="#61DAFB"/>
+    <text x="140" y="120" text-anchor="middle" font-size="11" fill="#0d1117">React</text>
+  </g>
+  <g class="icon-wrap" style="animation-delay:.9s">
+    <circle cx="190" cy="115" r="18" fill="#68A063"/>
+    <text x="190" y="120" text-anchor="middle" font-size="10" fill="#fff">Node</text>
+  </g>
+  <g class="icon-wrap" style="animation-delay:1.4s">
+    <circle cx="240" cy="115" r="18" fill="#00ED64"/>
+    <text x="240" y="120" text-anchor="middle" font-size="10" fill="#0d1117">Mongo</text>
+  </g>
+  <g class="icon-wrap" style="animation-delay:1.9s">
+    <circle cx="290" cy="115" r="18" fill="#F7DF1E"/>
+    <text x="290" y="120" text-anchor="middle" font-size="10" fill="#000">JS</text>
+  </g>
+  <g class="icon-wrap" style="animation-delay:2.3s">
+    <circle cx="340" cy="115" r="18" fill="#3178C6"/>
+    <text x="340" y="120" text-anchor="middle" font-size="10" fill="#fff">TS</text>
+  </g>
+
+  <!-- DevOps -->
+  <g class="icon-wrap" style="animation-delay:.5s">
+    <circle cx="140" cy="155" r="18" fill="#2496ED"/>
+    <text x="140" y="160" text-anchor="middle" font-size="10" fill="#fff">Docker</text>
+  </g>
+  <g class="icon-wrap" style="animation-delay:1s">
+    <circle cx="190" cy="155" r="18" fill="#326CE5"/>
+    <text x="190" y="160" text-anchor="middle" font-size="10" fill="#fff">K8s</text>
+  </g>
+  <g class="icon-wrap" style="animation-delay:1.5s">
+    <circle cx="240" cy="155" r="18" fill="#FF6F00"/>
+    <text x="240" y="160" text-anchor="middle" font-size="10" fill="#fff">CI</text>
+  </g>
+  <g class="icon-wrap" style="animation-delay:2s">
+    <circle cx="290" cy="155" r="18" fill="#FF9900"/>
+    <text x="290" y="160" text-anchor="middle" font-size="10" fill="#0d1117">AWS</text>
+  </g>
+
+  <!-- AI / NLP -->
+  <g class="icon-wrap" style="animation-delay:.4s">
+    <circle cx="140" cy="195" r="18" fill="#09A3D5"/>
+    <text x="140" y="200" text-anchor="middle" font-size="10" fill="#fff">spaCy</text>
+  </g>
+  <g class="icon-wrap" style="animation-delay:.9s">
+    <circle cx="190" cy="195" r="18" fill="#013243"/>
+    <text x="190" y="200" text-anchor="middle" font-size="10" fill="#fff">NumPy</text>
+  </g>
+  <g class="icon-wrap" style="animation-delay:1.4s">
+    <circle cx="240" cy="195" r="18" fill="#8E24AA"/>
+    <text x="240" y="200" text-anchor="middle" font-size="9" fill="#fff">NLP</text>
+  </g>
+  <g class="icon-wrap" style="animation-delay:1.9s">
+    <circle cx="290" cy="195" r="18" fill="#FF4081"/>
+    <text x="290" y="200" text-anchor="middle" font-size="9" fill="#fff">AI</text>
+  </g>
+
+  <!-- Tooling -->
+  <g class="icon-wrap" style="animation-delay:.2s">
+    <circle cx="140" cy="235" r="18" fill="#F4511E"/>
+    <text x="140" y="240" text-anchor="middle" font-size="9" fill="#fff">Git</text>
+  </g>
+  <g class="icon-wrap" style="animation-delay:.7s">
+    <circle cx="190" cy="235" r="18" fill="#181717"/>
+    <text x="190" y="240" text-anchor="middle" font-size="9" fill="#fff">GH</text>
+  </g>
+  <g class="icon-wrap" style="animation-delay:1.2s">
+    <circle cx="240" cy="235" r="18" fill="#4CAF50"/>
+    <text x="240" y="240" text-anchor="middle" font-size="9" fill="#fff">Nginx</text>
+  </g>
+  <g class="icon-wrap" style="animation-delay:1.7s">
+    <circle cx="290" cy="235" r="18" fill="#00BFA5"/>
+    <text x="290" y="240" text-anchor="middle" font-size="9" fill="#0d1117">Vercel</text>
+  </g>
+
+  <!-- Center emblem -->
+  <g class="icon-wrap" style="animation-delay:.5s">
+    <circle cx="560" cy="150" r="58" fill="none" stroke="url(#gl)" stroke-width="4">
+      <animate attributeName="r" values="54;58;54" dur="6s" repeatCount="indefinite"/>
+    </circle>
+    <text x="560" y="154" text-anchor="middle" font-size="18" fill="#e6e6e6" font-family="Fira Code">BUILD</text>
+    <text x="560" y="174" text-anchor="middle" font-size="10" fill="#9ad8ff" font-family="Fira Code">ITERATE • SCALE</text>
+  </g>
+
+  <!-- Decorative gradient bar -->
+  <rect x="430" y="60" width="350" height="8" rx="4" fill="url(#gl)">
+    <animate attributeName="width" values="120;350;120" dur="10s" repeatCount="indefinite"/>
+  </rect>
+  <rect x="430" y="230" width="350" height="8" rx="4" fill="url(#gl)">
+    <animate attributeName="x" values="430;500;430" dur="8s" repeatCount="indefinite"/>
+  </rect>
+</svg>
